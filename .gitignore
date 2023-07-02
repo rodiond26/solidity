@@ -1,4 +1,8 @@
 # IDE
 .idea
 
-**/artifacts
+node_modules/
+package-lock.json
+.vscode
+cache/
+artifacts/
