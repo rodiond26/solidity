@@ -1,8 +1,10 @@
 # IDE
 .idea
+.vscode
 
 node_modules/
-package-lock.json
-.vscode
 cache/
 artifacts/
+
+package-lock.json
+.prettierrc.json
