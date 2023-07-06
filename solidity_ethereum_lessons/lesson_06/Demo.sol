@@ -41,6 +41,6 @@ contract Demo {
     }
 
     fallback() external payable {
-        
+
     }
 }
