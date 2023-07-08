@@ -1,0 +1,16 @@
+{
+  "name": "lesson_07",
+  "version": "1.0.0",
+  "description": "Инструкции require, revert, assert необходимы для того, чтобы проверять некое условие, если которое не выполняется,\r то должен быть откат транзакции.",
+  "main": "demo-test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.16.1"
+  }
+}
