@@ -3,7 +3,7 @@
 ---
 
 - [x] Lesson 01
-- [ ] Lesson 02
+- [x] Lesson 02
 - [x] Lesson 03
 - [ ] Lesson 04
 - [x] Lesson 05

@@ -9,7 +9,7 @@ contract AucEngine {
 
     struct Auction {
         address payable seller;
-        uint startingPrice ;
+        uint startingPrice;
         uint finalPrice;
         uint startAt;
         uint endsAt;
@@ -32,31 +32,31 @@ contract AucEngine {
         require(_startingPrice >= _discountRate * duration, "incorrect starting price");
 
         Auction memory newAuction = Auction({
-            seller: payable (msg.sender),
-            startingPrice : _startingPrice,
+            seller: payable(msg.sender),
+            startingPrice: _startingPrice,
             finalPrice: _startingPrice,
             discountRate: _discountRate,
             startAt: block.timestamp, // now
-            endsAt: block.timestamp+duration,
+            endsAt: block.timestamp + duration,
             item: _item,
             stopped: false
         });
 
         auctions.push(newAuction);
-        emit AuctionCreated(auctions.length -1, _item, _startingPrice, duration);
+        emit AuctionCreated(auctions.length - 1, _item, _startingPrice, duration);
     }
 
-        function getPriceFor(uint index) public view returns(uint) {
-            Auction memory cAuction = auctions[index];
+    function getPriceFor(uint index) public view returns (uint) {
+        Auction memory cAuction = auctions[index];
 
-            require(!cAuction.stopped, "stopped!");
-            uint elapsed = block.timestamp - cAuction.startAt;
-            uint discount = cAuction.discountRate * elapsed;
+        require(!cAuction.stopped, "stopped!");
+        uint elapsed = block.timestamp - cAuction.startAt;
+        uint discount = cAuction.discountRate * elapsed;
 
-            return cAuction.startingPrice - discount;
-        }
+        return cAuction.startingPrice - discount;
+    }
 
-        function buy(uint index) external payable {  
-                      Auction memory cAuction = auctions[index];
+    function buy(uint index) external payable {
+        Auction memory cAuction = auctions[index];
     }
 }
