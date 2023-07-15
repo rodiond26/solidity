@@ -5,16 +5,16 @@
 - [x] Lesson 01
 - [x] Lesson 02
 - [x] Lesson 03
-- [ ] Lesson 04
+- [x] Lesson 04
 - [x] Lesson 05
 - [x] Lesson 06
 - [x] Lesson 07
-- [ ] Lesson 08
+- [ ] Lesson 08 *
 - [ ] Lesson 09
 
 ---
 
-- [ ] Lesson 10
+- [ ] Lesson 10 *
 - [ ] Lesson 11
 - [ ] Lesson 12
 - [ ] Lesson 13
